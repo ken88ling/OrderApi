@@ -29,5 +29,7 @@ namespace OrderApi.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<OrderApi.Models.Product> Products { get; set; }
     }
 }
